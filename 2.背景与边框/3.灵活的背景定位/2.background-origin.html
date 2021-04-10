@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        background: url(img/code-pirate.svg) no-repeat #58a;
+      }
+      .box1 {
+        background-position: right 10px bottom 10px;
+      }
+      .box2 {
+        background: url('img/code-pirate.svg') no-repeat #58a bottom right; /* 或 100% 100% */
+        background-origin: content-box;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>基本</h1>
+    <div class="box box1"></div>
+    <h1>设置位置</h1>
+    <div class="box box2"></div>
+  </body>
+</html>
